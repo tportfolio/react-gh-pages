@@ -10,13 +10,13 @@ const ExternalLinks = () => {
   return (
     <div id="icons">
       <a href="https://github.com/tportfolio">
-        <FontAwesomeIcon className="icon" icon={faGithub} size="3x" color="black" />
+        <FontAwesomeIcon className="icon" icon={faGithub} size="2x" color="black" />
       </a>
       <a href="https://linkedin.com/in/tportfolio/">
-        <FontAwesomeIcon className="icon linkedin" icon={faLinkedin} size="3x" color="#0072b1" />
+        <FontAwesomeIcon className="icon linkedin" icon={faLinkedin} size="2x" color="#0072b1" />
       </a> 
       <a href={pdf}>
-        <FontAwesomeIcon className="icon" icon={faFilePdf} size="3x" color="red"/>
+        <FontAwesomeIcon className="icon" icon={faFilePdf} size="2x" color="red"/>
       </a>           
     </div>  
   );

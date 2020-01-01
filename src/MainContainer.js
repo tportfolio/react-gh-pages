@@ -8,7 +8,7 @@ import profilePicture from "./res/photo.jpg";
 
 const MainContainer = () => {
     return (
-        <Jumbotron className="maincontainer">
+        <Jumbotron>
             <FadeIn>
                 <img src={profilePicture} className="pic" alt="Portrait"/>
                 <h1>timothy portfolio</h1>

@@ -1,5 +1,6 @@
 .icon {
     margin: 8px;
+    font-size: min(4vw, 40px);
 }
 
 .icon:hover {

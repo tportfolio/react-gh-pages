@@ -14,6 +14,8 @@
     border-image: radial-gradient(rgb(48, 47, 28), rgb(30, 42, 59)) 1;
     text-align: right;
     max-width: 800px;
+    margin: 10px;
+    min-width: 475px;
 }
 
 #container {
@@ -31,6 +33,7 @@ hr {
 }
 
 h1 {
+    font-size: max(1.5vw, 30px);
     color:white;
 }
 
