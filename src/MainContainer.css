@@ -4,6 +4,7 @@
     box-shadow: 11px 15px 40px rgba(50, 51, 61, 0.5);
     border-radius: 8px;
     margin-right: 20px;
+    min-width: 85px;
 }
 
 
@@ -14,29 +15,25 @@
     border-image: radial-gradient(rgb(48, 47, 28), rgb(30, 42, 59)) 1;
     text-align: right;
     max-width: 800px;
-    margin: 10px;
-    min-width: 475px;
-}
-
-#container {
-    width: 30%;
-    min-width: 400px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 250px;
+    min-height: 200px;
 }
 
 hr {
-    width: 70%;
+    width: 64%;
     float: right;
     border-width: 3px;
     background-color: rgb(55, 60, 80);
 }
 
 h1 {
-    font-size: max(1.5vw, 30px);
+    font-size: min(5vw, 30pt);
     color:white;
 }
 
 p {
+    font-size: min(3.5vw, 15pt);
     color:#F2A900;
 }
