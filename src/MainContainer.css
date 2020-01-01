@@ -6,13 +6,21 @@
     margin-right: 20px;
 }
 
-.maincontainer {
+
+.jumbotron {
     background-image: url("./res/paper_texture.png"); /* credit to https://www.transparenttextures.com/ for texture */
     background-color: #5D6A7E;
-    width: 30%;
     border: 2px solid;
     border-image: radial-gradient(rgb(48, 47, 28), rgb(30, 42, 59)) 1;
     text-align: right;
+    max-width: 800px;
+}
+
+#container {
+    width: 30%;
+    min-width: 400px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 hr {
