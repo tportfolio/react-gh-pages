@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MainContainer from './MainContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Placeholder for timportfol.io...
-        </p>        
-      </header>
-    </div>
+    <>
+        <div className="App">
+          <MainContainer/>
+        </div>
+    </>
   );
 }
 

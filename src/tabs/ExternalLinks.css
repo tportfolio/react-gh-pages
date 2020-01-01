@@ -1,0 +1,12 @@
+.icon {
+    margin: 8px;
+}
+
+.icon:hover {
+    color: rgb(212, 195, 147);
+    transition: 0.1s;
+}
+
+.linkedin {
+    background: linear-gradient(180deg, transparent 0%, transparent 15%, white 15%, white 85%, transparent 85%);
+}

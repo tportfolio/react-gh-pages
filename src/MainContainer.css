@@ -1,0 +1,31 @@
+.pic {
+    float: left;
+    width: 25%;
+    box-shadow: 11px 15px 40px rgba(50, 51, 61, 0.5);
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.maincontainer {
+    background-image: url("./res/paper_texture.png"); /* credit to https://www.transparenttextures.com/ for texture */
+    background-color: #5D6A7E;
+    width: 30%;
+    border: 2px solid;
+    border-image: radial-gradient(rgb(48, 47, 28), rgb(30, 42, 59)) 1;
+    text-align: right;
+}
+
+hr {
+    width: 70%;
+    float: right;
+    border-width: 3px;
+    background-color: rgb(55, 60, 80);
+}
+
+h1 {
+    color:white;
+}
+
+p {
+    color:#F2A900;
+}
