@@ -11,7 +11,7 @@
         margin-right: 0px;
         width: 70%;
     }
-    .jumbotron {
+    .container {
         margin-top: 10px;
         text-align: center !important;
     }
@@ -20,23 +20,23 @@
     }
 }
 
-.jumbotron {
+.container {
     background-image: url("./res/paper_texture.png"); /* credit to https://www.transparenttextures.com/ for texture */
     background-color: #5D6A7E;
     border: 2px solid;
     border-image: radial-gradient(rgb(48, 47, 28), rgb(30, 42, 59)) 1;
     text-align: right;
     max-width: 800px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 40px;
     min-width: 250px;
 }
 
 hr {
     width: 95%;
     float: right;
-    border-width: 3px;
     background-color: rgb(55, 60, 80);
+    height: 3px !important;
+    opacity: 100% !important;
 }
 
 h1 {

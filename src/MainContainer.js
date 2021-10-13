@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import './MainContainer.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Jumbotron, Container, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import FadeIn from 'react-fade-in';
+
 import ExternalLinks from './tabs/ExternalLinks';
+import './MainContainer.css';
+
 import profilePicture from "./res/photo.jpg";
 
-export default class MainContainer extends Component {
+export default class MainContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,35 +19,34 @@ export default class MainContainer extends Component {
     componentDidMount() {
         const img = new Image();
         img.src = profilePicture;
-      
-        img.onload = () => {
-          this.setState({ imageIsReady: true });
-        }
-      }
 
-      render() {
-        const {imageIsReady} = this.state;
+        img.onload = () => {
+            this.setState({ imageIsReady: true });
+        }
+    }
+
+    render() {
+        const { imageIsReady } = this.state;
         if (!imageIsReady) {
             return null;
         }
 
-        return ( 
+        return (
             <FadeIn>
-                <Jumbotron> 
-                    <Container>
-                        <Row>
-                            <Col sm={4}>
-                                <img src={profilePicture} className="pic" alt="Portrait"/></Col>
-                            <Col sm={8}>                    
-                                <h1>timothy portfolio</h1>
-                                <p>software engineer ii | boeing</p>
-                                <hr/>
-                                <ExternalLinks/>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Jumbotron>
+                <Container className="container">
+                    <Row>
+                        <Col sm={4}>
+                            <img src={profilePicture} className="pic" alt="Portrait" />
+                        </Col>
+                        <Col sm={8}>
+                            <h1>timothy portfolio</h1>
+                            <p>software engineer iii | boeing</p>
+                            <hr />
+                            <ExternalLinks />
+                        </Col>
+                    </Row>
+                </Container>
             </FadeIn>
         );
-      }
-} 
+    }
+}
