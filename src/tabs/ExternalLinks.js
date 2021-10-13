@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     LinkedIn as LinkedInIcon,
     GitHub as GitHubIcon,
@@ -30,8 +30,10 @@ const buttons = [
     }
 ];
 
-
 const ExternalLinks = () => {
+    const hoveredColor = "rgb(212, 195, 147)";
+    const [hovered, setHovered] = useState(null);
+    
     return (
         <div id="icons">
             {buttons.map(({ icon: Icon, color, id, url }) => (
@@ -41,14 +43,16 @@ const ExternalLinks = () => {
                     variant="contained"
                     component="label"
                     style={{ margin: "5px" }}
+                    onMouseEnter={() => setHovered(id)}
+                    onMouseLeave={() => setHovered(null)}
                 >
                     <a href={url}>
                         <Icon
                             id={id}
                             style={{
-                                margin: "5px",
-                                color,
-                                fontSize: "3.25em"
+                                color: id === hovered ? hoveredColor : color,
+                                fontSize: "3.25em",
+                                margin: "5px"
                             }}
                         />
                     </a>

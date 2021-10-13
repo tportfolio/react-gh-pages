@@ -36,7 +36,7 @@ hr {
     float: right;
     background-color: rgb(55, 60, 80);
     height: 3px !important;
-    opacity: 100% !important;
+    opacity: 1 !important;
 }
 
 h1 {

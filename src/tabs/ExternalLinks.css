@@ -9,13 +9,8 @@
     background: #606f8552 !important;
 }
 
-.icon:hover {
-    color: rgb(212, 195, 147);
-    transition: 0.1s;
-}
-
 #linkedin {
     background: linear-gradient(white, white) no-repeat;
-    background-position:center;
-    background-size:60% 60%;
+    background-position: center;
+    background-size: 60% 60%;
 }
