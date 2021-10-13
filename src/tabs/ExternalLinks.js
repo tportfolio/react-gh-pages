@@ -24,7 +24,7 @@ const buttons = [
     },
     {
         icon: DescriptionTwoToneIcon,
-        color: "#rgb(217, 47, 47)",
+        color: "rgb(217, 47, 47)",
         url: pdf,
         id: "resume"
     }
