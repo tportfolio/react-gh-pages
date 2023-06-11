@@ -1,11 +1,12 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import FadeIn from 'react-fade-in';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import FadeIn from "react-fade-in";
 
-import ExternalLinks from './tabs/ExternalLinks';
-import './MainContainer.css';
+import ExternalLinks from "./tabs/ExternalLinks";
+import "./MainContainer.css";
 
 import profilePicture from "./res/photo.jpg";
+import squareLogo from "./res/square_logo.png";
 
 export default class MainContainer extends React.Component {
     constructor(props) {
@@ -33,14 +34,19 @@ export default class MainContainer extends React.Component {
 
         return (
             <FadeIn>
-                <Container className="container">
+                <Container id="container">
                     <Row>
                         <Col sm={4}>
-                            <img src={profilePicture} className="pic" alt="Portrait" />
+                            <img src={profilePicture} id="pic" alt="Portrait" />
                         </Col>
                         <Col sm={8}>
                             <h1>timothy portfolio</h1>
-                            <p>software engineer iii | boeing</p>
+                            <p> 
+                                software engineer (L5) at   
+                                <a href={"https://squareup.com/"}>
+                                    <img src={squareLogo} id="logo" alt="Square Logo" />
+                                </a>
+                            </p>
                             <hr />
                             <ExternalLinks />
                         </Col>
