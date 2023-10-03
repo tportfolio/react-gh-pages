@@ -47,8 +47,9 @@
 hr {
     width: 95%;
     float: right;
+    border: 1px solid rgb(55, 60, 80);
     background-color: rgb(55, 60, 80);
-    height: 3px !important;
+    height: 3px;
     opacity: 1 !important;
 }
 
